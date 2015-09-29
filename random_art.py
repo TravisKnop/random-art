@@ -1,4 +1,5 @@
 import random
+import math
 
 # Your job is to create better version of create_expression and
 # run_expression to create random art.
@@ -8,8 +9,7 @@ import random
 def create_expression():
     """This function takes no arguments and returns an expression that
     generates a number between -1.0 and 1.0, given x and y coordinates."""
-    expr = lambda x, y: (random.random() * 2) - 1
-    return expr
+    return random.choice([new_func3()])
 
 
 def run_expression(expr, x, y):
@@ -17,3 +17,17 @@ def run_expression(expr, x, y):
     an x and y value. It runs the expression, passing the x and y values
     to it and returns a value between -1.0 and 1.0."""
     return expr(x, y)
+
+def new_func():
+    a = random.randint(1,5)
+    b = random.randint(0,10)
+    return lambda x, y: (math.tan(a * (x-a) ** b) + math.sin((y-b) ** a))**2
+
+def new_func2():
+    a = random.random()
+    return lambda x, y: a*math.sin(x/a)) * math.tan((x-y**(random.randint(1,10))/a)/a + random.randint(-2,2)
+
+def new_func3():
+    a = random.randint(1,6)
+    b = random.randint(1,8)
+    return lambda x, y: math.tan(a*(x)**2+a*y**2) * math.sin(b*x**a+y**b) + random.randint(-2,2)
