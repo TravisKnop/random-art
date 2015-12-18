@@ -47,7 +47,7 @@ def hoop():
     return lambda x, y: ((a*(math.fabs(x+float(random.randint(1,4)**2 - math.cos(y*random.randint(1,5))**a)*random.random()))))
 
 def most_random():
-    w = random.randint(1,3)
+    w = random.randint(1,4)
     if w == 1:
         return lambda x, y: (math.sin(x)*y) + (math.sin(y)*x)
     if w == 2:

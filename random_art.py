@@ -9,7 +9,14 @@ import math
 def create_expression():
     """This function takes no arguments and returns an expression that
     generates a number between -1.0 and 1.0, given x and y coordinates."""
-    return random.choice([new_func4(), new_func5(), new_func6()])
+    return random.choice([
+#        new_func1(),
+#        new_func2(),
+        new_func3(),
+#        new_func4(),
+#        new_func5(),
+#        new_func6()
+        ])
 
 
 def run_expression(expr, x, y):
@@ -18,7 +25,7 @@ def run_expression(expr, x, y):
     to it and returns a value between -1.0 and 1.0."""
     return expr(x, y)
 
-def new_func():
+def new_func1():
     a = random.randint(1,5)
     b = random.randint(0,10)
     return lambda x, y: (math.tan(a * (x-a) ** b) + math.sin((y-b) ** a))**2
@@ -40,3 +47,5 @@ def new_func5():
 
 def new_func6():
     return lambda x, y: math.tan(3*x)
+
+create_expression()

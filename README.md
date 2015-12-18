@@ -4,6 +4,16 @@
 
 Create art using Python's random module and math functions.
 
+This works by using Python's random module, running it through patterns (such as sin(random)), and outputting it to an image.
+
+Colors are created by running the algorithm three times: once for each color (red-green-blue), printing random patterns of saturation for each color on top of each other. There are a variety of algorithm options in the python app, so that red may print in circles (tan(x**2 + y**2), green in vertical waves (sin(x)), and blue in horizontal waves (sin(y)), etc.
+
+To create art, run create_art.py.
+
+To play around with algorithms, open random_art.py.
+
+
+
 ## Objectives
 
 ### Learning Objectives
